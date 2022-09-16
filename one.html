@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>one</title>
+    <style>
+        /* variables */
+        :root{
+            --primary:hsl(179, 62%, 43%);
+            --secondary:hsl(71, 74%, 53%);
+            --clr-gray: hsl(204%, 43%, 93%);
+            --clr-blue:hsl(218%, 22% ,67%);
+
+            --fs-hd:2.5rem;
+            --fs-700:2rem;
+            --fs-400:1.3rem;
+        }
+        /* reset */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        ul{
+            list-style-type: none;
+        }
+        
+        /* base styles */
+        .container{
+            width:80%;
+            max-width: 770px;
+            margin-inline: auto;
+        }
+        body{
+            font-size: var(--fs-400)
+        }
+        button{
+            color:white;
+            background:var(--secondary);
+            padding: 1em 8em;
+            border:none;
+            border-radius:5px;
+
+
+        }
+
+        /* typography */
+    
+
+        /* mobile styles */
+        h1{
+            color:var(--primary);
+            padding: 1em 0;
+            font-size: var(--fs-hd)
+        }
+        
+        h3{
+            color:var(--secondary);
+            padding-bottom:.5em;
+            font-size: var(--fs-400)
+        }
+        .para{
+            margin-bottom: 2em;
+            font-size:var(--fs-400);
+        }
+        
+        h2{
+            color:white;
+            padding:.5em 0;
+        }
+        .main{
+            background:var(--primary);
+            padding:2.5em 0;  
+        }
+        .section p{
+            color:hsla(0, 0%, 100%, 0.5);
+            padding-bottom: 1em;
+            
+        }
+        .section span{
+            color: white;
+            font-size:var(--fs-700);
+            font-weight:700;
+        }
+
+        .article{
+            background:hsl(179, 62%, 46%);
+            padding:2.5em 0;
+            color: hsla(0, 0%, 100%, 0.5); 
+        
+        }
+         /*desktop */ 
+         @media  screen and (min-width: 960px){
+            :root{
+
+
+            --fs-hd:4rem;
+            --fs-700:2.3rem;
+            --fs-400:1.5rem;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+        .section{
+            grid-column: 1/2;
+        }
+        .subsection{
+            grid-column: 2/3;
+        }
+          
+         }
+
+        
+       
+        
+        
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Join Our Community</h>
+        <h3>30-day,hassle-free money back guarantee</h3>
+        <p class="para">Gain acess to our full library of tutorials along with expert code reviews.Perfect for any developer who is serious about honing their skills</p>
+
+    </div>
+<div class="grid">
+    <div class="main">
+        <div class="container">
+            <section class="section">
+               <h2>Monthly Subscription</h2> 
+               <p><span> $29 </span> per month</p> 
+               <p>Full acess for less than $1 a day</p>
+               <button> Sign up</button>
+            </section>
+
+        </div>
+    </div> 
+    <div class="article">  
+        <div class="container">
+            <section class="subsection ">
+                <h2> Why Us</h2>
+                <ul>
+                    <li>Tutorials by industry experts</li>
+                    <li>Peer and expert code review</li>
+                    <li>coding exercises</li>
+                    <li>Acess to our GitHub repos</li>
+                    <li> Community forum</li>
+                    <li>Flashcard decks</li>
+                    <li> New videos every week</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+</html>
